@@ -765,7 +765,7 @@ export default function App() {
                 {/* Header */}
                 <div className="flex flex-col items-center mb-8">
                   <img
-                    src="diitLogo.webp"
+                    src="src/diitLogo.webp"
                     alt="DIIT Logo"
                     className="h-12 mb-2 object-contain"
                     referrerPolicy="no-referrer"
@@ -933,7 +933,7 @@ export default function App() {
                   </div>
                   <div className="flex items-center gap-2">
                     <img
-                      src="/Meta-Logo.png"
+                      src="src/Meta-Logo.png"
                       alt=""
                       className="w-24 h-24 object-contain"
                     />
@@ -1006,7 +1006,34 @@ export default function App() {
                           </h4>
                           <p className="text-slate-600 text-[12px] flex justify-between gap-10">
                             <span>
-                              From {item.startDate ? new Date(item.startDate).toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true }) : ''} to {item.endDate ? new Date(item.endDate).toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true }) : ''}
+                              From{" "}
+                              {item.startDate
+                                ? new Date(item.startDate).toLocaleString(
+                                    "en-US",
+                                    {
+                                      month: "short",
+                                      day: "numeric",
+                                      year: "numeric",
+                                      hour: "numeric",
+                                      minute: "2-digit",
+                                      hour12: true,
+                                    },
+                                  )
+                                : ""}{" "}
+                              to{" "}
+                              {item.endDate
+                                ? new Date(item.endDate).toLocaleString(
+                                    "en-US",
+                                    {
+                                      month: "short",
+                                      day: "numeric",
+                                      year: "numeric",
+                                      hour: "numeric",
+                                      minute: "2-digit",
+                                      hour12: true,
+                                    },
+                                  )
+                                : ""}
                             </span>
                             <span>Impressions {item.impressions}</span>
                           </p>
