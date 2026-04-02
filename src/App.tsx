@@ -3,6 +3,8 @@ import { Printer, FileText, Settings2, Download } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { cn } from "./lib/utils";
 import { numberToWords } from "./utils/numberToWords";
+import diitLogo from "./diitLogo.webp";
+import metaLogo from "./Meta-Logo.png";
 
 // @ts-ignore
 import html2pdf from "html2pdf.js";
@@ -765,7 +767,7 @@ export default function App() {
                 {/* Header */}
                 <div className="flex flex-col items-center mb-8">
                   <img
-                    src="src/diitLogo.webp"
+                    src={diitLogo}
                     alt="DIIT Logo"
                     className="h-12 mb-2 object-contain"
                     referrerPolicy="no-referrer"
@@ -933,7 +935,7 @@ export default function App() {
                   </div>
                   <div className="flex items-center gap-2">
                     <img
-                      src="src/Meta-Logo.png"
+                      src={metaLogo}
                       alt=""
                       className="w-24 h-24 object-contain"
                     />
