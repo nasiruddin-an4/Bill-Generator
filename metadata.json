@@ -1,0 +1,5 @@
+{
+  "name": "DIIT Requisition Bill Generator",
+  "description": "A tool to generate formal requisition bills and Facebook promotional invoices for DIIT with automatic calculations and word conversion.",
+  "requestFramePermissions": []
+}
